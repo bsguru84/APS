@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "APS", "APS\APS.vcxproj", "{06488D2B-CF62-43A5-A7BC-D2D6105BAC92}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EditDistance", "EditDistance\EditDistance.vcxproj", "{B398ED55-4F6A-46EF-A5A6-5D1A9F0BBDD5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{06488D2B-CF62-43A5-A7BC-D2D6105BAC92}.Debug|Win32.ActiveCfg = Debug|Win32
-		{06488D2B-CF62-43A5-A7BC-D2D6105BAC92}.Debug|Win32.Build.0 = Debug|Win32
-		{06488D2B-CF62-43A5-A7BC-D2D6105BAC92}.Release|Win32.ActiveCfg = Release|Win32
-		{06488D2B-CF62-43A5-A7BC-D2D6105BAC92}.Release|Win32.Build.0 = Release|Win32
+		{B398ED55-4F6A-46EF-A5A6-5D1A9F0BBDD5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B398ED55-4F6A-46EF-A5A6-5D1A9F0BBDD5}.Debug|Win32.Build.0 = Debug|Win32
+		{B398ED55-4F6A-46EF-A5A6-5D1A9F0BBDD5}.Release|Win32.ActiveCfg = Release|Win32
+		{B398ED55-4F6A-46EF-A5A6-5D1A9F0BBDD5}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
