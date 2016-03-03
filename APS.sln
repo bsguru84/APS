@@ -5,6 +5,12 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EditDistance", "EditDistance\EditDistance.vcxproj", "{B398ED55-4F6A-46EF-A5A6-5D1A9F0BBDD5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CoinChange", "CoinChange\CoinChange.vcxproj", "{BDA3EF22-DC2F-40B5-BFD0-7D4C0E2CA398}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Queue", "Queue\Queue.vcxproj", "{81B0B43D-9723-40DF-ADFB-C69D2A423610}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stack", "Stack\Stack.vcxproj", "{5EC19D75-4DC4-4783-A004-8D27B5D89F17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,6 +21,18 @@ Global
 		{B398ED55-4F6A-46EF-A5A6-5D1A9F0BBDD5}.Debug|Win32.Build.0 = Debug|Win32
 		{B398ED55-4F6A-46EF-A5A6-5D1A9F0BBDD5}.Release|Win32.ActiveCfg = Release|Win32
 		{B398ED55-4F6A-46EF-A5A6-5D1A9F0BBDD5}.Release|Win32.Build.0 = Release|Win32
+		{BDA3EF22-DC2F-40B5-BFD0-7D4C0E2CA398}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BDA3EF22-DC2F-40B5-BFD0-7D4C0E2CA398}.Debug|Win32.Build.0 = Debug|Win32
+		{BDA3EF22-DC2F-40B5-BFD0-7D4C0E2CA398}.Release|Win32.ActiveCfg = Release|Win32
+		{BDA3EF22-DC2F-40B5-BFD0-7D4C0E2CA398}.Release|Win32.Build.0 = Release|Win32
+		{81B0B43D-9723-40DF-ADFB-C69D2A423610}.Debug|Win32.ActiveCfg = Debug|Win32
+		{81B0B43D-9723-40DF-ADFB-C69D2A423610}.Debug|Win32.Build.0 = Debug|Win32
+		{81B0B43D-9723-40DF-ADFB-C69D2A423610}.Release|Win32.ActiveCfg = Release|Win32
+		{81B0B43D-9723-40DF-ADFB-C69D2A423610}.Release|Win32.Build.0 = Release|Win32
+		{5EC19D75-4DC4-4783-A004-8D27B5D89F17}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5EC19D75-4DC4-4783-A004-8D27B5D89F17}.Debug|Win32.Build.0 = Debug|Win32
+		{5EC19D75-4DC4-4783-A004-8D27B5D89F17}.Release|Win32.ActiveCfg = Release|Win32
+		{5EC19D75-4DC4-4783-A004-8D27B5D89F17}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
