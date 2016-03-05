@@ -40,7 +40,7 @@ void Push(SStack *stack, int data)
 int Pop(SStack *stack)
 {
 	if (isEmpty(stack))
-		return NULL;
+		return -1;
 
 	int data = stack->first->data;
 	stack->first = stack->first->next;
@@ -48,6 +48,7 @@ int Pop(SStack *stack)
 	return data;
 }
 
+#if 0
 void main()
 {
 	SStack *stack = (SStack*)calloc(1, sizeof(SStack));
@@ -73,3 +74,4 @@ void main()
 	_getch();
 
 }
+#endif

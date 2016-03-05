@@ -21,7 +21,7 @@ bool isEmpty(SQueue *queue)
 {
 	return queue->first == NULL;
 }
-void Enqueue(SQueue *queue,void *data)
+void Enqueue(SQueue *queue,int data)
 {
 	SNode* last = (SNode*)malloc(sizeof(SNode));
 	SNode *oldlast = queue->last;
@@ -42,12 +42,12 @@ void Enqueue(SQueue *queue,void *data)
 	
 }
 
-void *Dequeue(SQueue *queue)
+int Dequeue(SQueue *queue)
 {
-	void *data = NULL;
+	int data = NULL;
 	SNode *first = NULL;
 	if (isEmpty(queue))
-		return NULL;
+		return -1;
 
 	first = queue->first;
 	data = first->data;
@@ -59,23 +59,25 @@ void *Dequeue(SQueue *queue)
 	return data;
 }
 
+#if 0
 void main()
 {
 	SQueue *queue = (SQueue*)calloc(1,sizeof(SQueue));
 
-	Enqueue(queue, pack(1));
-	Enqueue(queue, pack(3));
-	Enqueue(queue, pack(4));
-	Enqueue(queue, pack(5));
-	Enqueue(queue, pack(8));
+	Enqueue(queue, 1);
+	Enqueue(queue, 3);
+	Enqueue(queue, 4);
+	Enqueue(queue, 5);
+	Enqueue(queue, 8);
 
-	printf("Dequede Data : %d\n", unpack((Sdata*)Dequeue(queue)));
-	printf("Dequede Data : %d\n", unpack((Sdata*)Dequeue(queue)));
-	printf("Dequede Data : %d\n", unpack((Sdata*)Dequeue(queue)));
-	printf("Dequede Data : %d\n", unpack((Sdata*)Dequeue(queue)));
-	printf("Dequede Data : %d\n", unpack((Sdata*)Dequeue(queue)));
-	printf("Dequede Data : %d\n", unpack((Sdata*)Dequeue(queue)));
+	printf("Dequede Data : %d\n", Dequeue(queue));
+	printf("Dequede Data : %d\n", Dequeue(queue));
+	printf("Dequede Data : %d\n", Dequeue(queue));
+	printf("Dequede Data : %d\n", Dequeue(queue));
+	printf("Dequede Data : %d\n", Dequeue(queue));
+	printf("Dequede Data : %d\n", Dequeue(queue));
 
 	_getch();
 
 }
+#endif
