@@ -92,8 +92,8 @@ void main()
 	addEdge(graph, 2, 4);
 	addEdge(graph, 4, 6);
 	addEdge(graph, 4, 5);
-	addEdge(graph, 7, 5);
-	addEdge(graph, 4, 7);
+	//addEdge(graph, 7, 5);
+	//addEdge(graph, 4, 7);
 
 	//DFS(dfs,graph, 7);
 

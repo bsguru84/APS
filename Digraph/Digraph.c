@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
-#include "Graph.h"
+#include "Digraph.h""
 
 
-SGraph *createGraph(int V)
+SDigraph *createDigraph(int V)
 {
-	SGraph *graph = calloc(1, sizeof(SGraph));
+	SDigraph *graph = calloc(1, sizeof(SDigraph));
 
 	graph->array = malloc(sizeof(SAdjList)*V);
 	graph->V = V;
@@ -19,7 +19,7 @@ SGraph *createGraph(int V)
 	return graph;
 }
 
-void addEdge(SGraph *graph, int source, int dest)
+void addEdge(SDigraph *graph, int source, int dest)
 {
 	if (source >= graph->V || dest >= graph->V)
 		return;
@@ -28,15 +28,10 @@ void addEdge(SGraph *graph, int source, int dest)
 	nodeS->next = graph->array[source].head;
 	nodeS->vertex = dest;
 	graph->array[source].head = nodeS;
-	
-	SAdjNode *nodeD = calloc(1, sizeof(SAdjNode));
-	nodeD->next = graph->array[dest].head;
-	nodeD->vertex = source;
-	graph->array[dest].head = nodeD;
 
 }
 
-SAdjNode *getAdjListHead(SGraph *graph, int vertex)
+SAdjNode *getAdjListHead(SDigraph *graph, int vertex)
 {
 	return graph->array[vertex].head;
 }
@@ -52,7 +47,7 @@ void main()
 	addEdge(graph, 2, 6);
 	addEdge(graph, 2, 5);
 	addEdge(graph, 3, 7);
-	
+
 	_getch();
 }
 #endif
